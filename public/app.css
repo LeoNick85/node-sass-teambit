@@ -6386,6 +6386,10 @@ a {
   color: #58402c;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -6489,6 +6493,11 @@ section {
   background-color: #ffe7d2;
 }
 
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 section#jumbotron #jumbotron-text-wrapper {
   float: left;
   width: 43%;
@@ -6519,4 +6528,34 @@ section#jumbotron img {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+section#features {
+  text-align: center;
+}
+section#features h2, section#features h3 {
+  padding: 0 20%;
+}
+section#features .features-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+}
+section#features .features-item {
+  width: 200px;
+}
+section#features .features-item p {
+  font-size: 18px;
+}
+section#features .features-item img {
+  width: 140px;
+  margin: 10px 0px;
+}
+section#features img.features-bigpic {
+  width: 280px;
+  margin: 30px 0px;
+}
+section#features hr {
+  margin: 80px 0px;
 }
