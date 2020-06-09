@@ -9,6 +9,10 @@ header {
         margin: 0px $space_small;
         font-size: $font_size_btn;
         cursor: pointer;
+
+        i {
+            margin-left: 8px;
+        }
     }
 
     #main_logo_h {

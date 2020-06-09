@@ -6382,9 +6382,22 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: #58402c;
+}
+
 .container {
   width: 80%;
   margin: auto;
+}
+
+.container-left {
+  width: 80%;
+}
+
+.container-right {
+  width: 80%;
+  margin-left: 20%;
 }
 
 .bottom-border {
@@ -6412,7 +6425,8 @@ ul li {
   float: left;
 }
 
-.btn_primary {
+.btn_primary, .btn_alt {
+  border: none;
   height: 35px;
   line-height: 35px;
   vertical-align: middle;
@@ -6420,34 +6434,24 @@ ul li {
   color: white;
   padding: 0px 20px;
   font-size: 14px;
+  border-radius: 7px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.btn_primary i {
+.btn_primary i, .btn_alt i {
   font-size: 20px;
   color: yellow;
   padding-right: 10px;
 }
 
 .btn_alt {
-  height: 35px;
-  line-height: 35px;
-  vertical-align: middle;
   background-color: white;
   color: #30488f;
-  padding: 0px 10px;
   border: 1px solid #30488f;
-  font-size: 14px;
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
 }
 .btn_alt i {
-  font-size: 20px;
   color: red;
-  padding-right: 10px;
 }
 
 header {
@@ -6462,6 +6466,9 @@ header ul li {
   font-size: 14px;
   cursor: pointer;
 }
+header ul li i {
+  margin-left: 8px;
+}
 header #main_logo_h {
   width: 110px;
   height: 35px;
@@ -6470,4 +6477,46 @@ header #main-menu-wrapper {
   float: right;
   display: flex;
   align-items: center;
+}
+
+section {
+  color: #58402c;
+  line-height: 1.5;
+  padding: 100px 0px;
+}
+
+.alt-bg {
+  background-color: #ffe7d2;
+}
+
+section#jumbotron #jumbotron-text-wrapper {
+  float: left;
+  width: 43%;
+}
+section#jumbotron #jumbotron-text-wrapper h1 {
+  font-size: 50px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+section#jumbotron #jumbotron-text-wrapper p {
+  font-size: 22px;
+}
+section#jumbotron #jumbotron-text-wrapper .cta {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+section#jumbotron #jumbotron-text-wrapper .cta > span {
+  margin: 0px 15px;
+  font-size: 13px;
+  color: #bdb5af;
+}
+section#jumbotron #jumbotron-text-wrapper a {
+  font-size: 14px;
+}
+section#jumbotron img {
+  float: right;
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }

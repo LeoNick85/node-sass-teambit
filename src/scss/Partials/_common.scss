@@ -2,9 +2,22 @@
     font-family: $main_font_family;
 }
 
+a {
+    color: $main_color;
+}
+
 .container {
     width: 80%;
     margin: auto;
+}
+
+.container-left {
+    width: 80%;
+}
+
+.container-right {
+    width: 80%;
+    margin-left: 20%;
 }
 
 .bottom-border {
@@ -33,6 +46,7 @@ ul li {
 }
 
 .btn_primary {
+    border: none;
     height: 35px;
     line-height: 35px;
     vertical-align: middle;
@@ -40,6 +54,7 @@ ul li {
     color: white;
     padding: 0px 20px;
     font-size: $font_size_btn;
+    border-radius: 7px;
     @include flex-vertical-center;
     cursor: pointer;
 
@@ -51,21 +66,12 @@ ul li {
 }
 
 .btn_alt {
-    height: 35px;
-    line-height: 35px;
-    vertical-align: middle;
+    @extend .btn_primary;
     background-color: white;
     color: $btn_main_color;
-    padding: 0px 10px;
     border: 1px solid $btn_main_color;
-    font-size: $font_size_btn;
-    border-radius: 7px;
-    @include flex-vertical-center;
-    cursor: pointer;
 
     i {
-        font-size: 20px;
         color: red;
-        padding-right: $space_small;
     }
 }

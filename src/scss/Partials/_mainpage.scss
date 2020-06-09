@@ -1,0 +1,48 @@
+section {
+    color: $main_color;
+    line-height: 1.5;
+    padding: $space_section 0px;
+}
+
+.alt-bg {
+    background-color: $secondary_color;
+}
+
+section#jumbotron {
+
+    #jumbotron-text-wrapper {
+        float: left;
+        width: 43%;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.4;
+            margin-bottom: $space_big;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .cta {
+            @include flex-vertical-center;
+            margin: $space_medium 0px;
+        }
+
+        .cta>span {
+            margin: 0px 15px;
+            font-size: 13px;
+            color: #bdb5af;
+        }
+
+        a {
+            font-size: $font_size_btn;
+        }
+    }
+
+    img {
+        float: right;
+        width: 50%;
+        object-fit: contain;
+    }
+}
