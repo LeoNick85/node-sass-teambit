@@ -6646,3 +6646,52 @@ section#quote #quote-wrapper::before {
   top: -35px;
   left: 0px;
 }
+
+footer {
+  color: #58402c;
+  margin: 100px 0px;
+}
+footer div.container {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+footer div.container div:first-child {
+  width: 30%;
+}
+footer div.container div:first-child img {
+  width: 50px;
+  display: inline-block;
+  margin-right: 8px;
+}
+footer div.container div:first-child p {
+  width: 250px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+footer div.container div:first-child a {
+  color: #30488f;
+}
+footer #site-map {
+  width: 68%;
+}
+footer #site-map ul {
+  padding-left: 20px;
+  float: left;
+  width: 120px;
+}
+footer #site-map ul li {
+  float: none;
+  font-size: 14px;
+  display: block;
+  margin: 15px 0px;
+}
+footer #site-map ul li:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+}
+footer #site-map ul li a:hover {
+  color: #30488f;
+}
