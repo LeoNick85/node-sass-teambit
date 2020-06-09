@@ -6498,6 +6498,12 @@ section {
   background-color: #ffe7d2;
 }
 
+.vertical-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .section-title {
   font-size: 26px;
   font-weight: bold;
@@ -6566,6 +6572,10 @@ section#features hr {
   margin: 80px 0px;
 }
 
+section#details {
+  width: 100%;
+  overflow: hidden;
+}
 section#details .details-row {
   margin-bottom: 100px;
 }
@@ -6588,4 +6598,51 @@ section#details div.details-item img {
   width: 60%;
   margin-left: 20%;
   margin-top: 30px;
+}
+
+section#quote h5, section#quote h6 {
+  font-size: 40px;
+  margin: 0px;
+  display: inline-block;
+}
+section#quote div img {
+  margin-left: 10px;
+}
+section#quote #quote-wrapper {
+  position: relative;
+  margin: 30px;
+  text-align: left;
+  width: 630px;
+  padding: 20px 20px 20px 30px;
+  background-color: white;
+  border: 1px solid #58402c;
+  border-radius: 7px;
+}
+section#quote #quote-wrapper #quote-sign img {
+  width: 38px;
+  height: 38px;
+}
+section#quote #quote-wrapper #quote-sign div {
+  display: inline-block;
+  height: 38px;
+}
+section#quote #quote-wrapper #quote-sign p {
+  margin: 0px 10px;
+}
+section#quote #quote-wrapper #quote-sign #quote-name {
+  font-size: 14px;
+  color: #30488f;
+}
+section#quote #quote-wrapper #quote-sign #quote-roles {
+  font-size: 12px;
+}
+section#quote #quote-wrapper::before {
+  content: "\F10D";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #30488f;
+  font-size: 40px;
+  top: -35px;
+  left: 0px;
 }
