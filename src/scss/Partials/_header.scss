@@ -1,7 +1,23 @@
 header {
-    display: float;
-}
+    padding: $space_medium 0px;
+    color: $main_color;
 
-#main-menu-wrapper {
-    float: right;
+    ul li {
+        line-height: 35px;
+        height: 35px;
+        padding: 0px $space_small;
+        margin: 0px $space_small;
+        font-size: $font_size_btn;
+        cursor: pointer;
+    }
+
+    #main_logo_h {
+        width: 110px;
+        height: 35px;
+    }
+
+    #main-menu-wrapper {
+        float: right;
+        @include flex-vertical-center;
+    }
 }

@@ -1,3 +1,7 @@
+* {
+    font-family: $main_font_family;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -29,15 +33,39 @@ ul li {
 }
 
 .btn_primary {
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
     background-color: $btn_main_color;
     color: white;
     padding: 0px 20px;
+    font-size: $font_size_btn;
+    @include flex-vertical-center;
+    cursor: pointer;
+
+    i {
+        font-size: 20px;
+        color: yellow;
+        padding-right: $space_small;
+    }
 }
 
 .btn_alt {
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
     background-color: white;
     color: $btn_main_color;
     padding: 0px 10px;
     border: 1px solid $btn_main_color;
+    font-size: $font_size_btn;
     border-radius: 7px;
+    @include flex-vertical-center;
+    cursor: pointer;
+
+    i {
+        font-size: 20px;
+        color: red;
+        padding-right: $space_small;
+    }
 }

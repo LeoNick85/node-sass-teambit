@@ -2,24 +2,31 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
         <title>Esercitazione #33 - Teambit layout with SASS</title>
     </head>
     <body>
-        <header>
-            <div class="container clearfix bottom-border">
-                <a href="https://teambit.io/">Teambit</a>
-                <div id="main-menu-wrapper">
-                    <ul>
-                        <li>Solutions</li>
-                        <li>Pricing</li>
-                        <li>Blog</li>
-                        <li>Sign In</li>
-                    </ul>
-                    <button class="btn_alt">Sign up</button>
-                </div>
+        <header class="container clearfix bottom-border">
+            <a href="https://teambit.io/">
+                <img src="public/img/logo.svg" alt="Logo Teambit.io" id="main_logo_h">
+            </a>
+            <div id="main-menu-wrapper">
+                <ul>
+                    <li>Solutions <i class="fas fa-caret-down"></i></li>
+                    <li>Pricing</li>
+                    <li>Blog</li>
+                    <li>Sign In</li>
+                </ul>
+                <button class="btn_alt"><i class="fab fa-google"></i><span>Sign up</span></button>
             </div>
         </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
         <script src="public/app.js" charset="utf-8"></script>
     </body>
 </html>
